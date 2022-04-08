@@ -16,5 +16,7 @@ For backend I will be implementing Rails API-Only scaffolding:
 rails new server --api
 ```
 For front end we will be using Create React App:
-
+```
+npx create-react-app client
+```
 
