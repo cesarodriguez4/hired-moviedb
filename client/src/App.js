@@ -2,6 +2,7 @@ import {useEffect, useState} from 'react';
 import { Requests } from './api/requests';
 import './App.css';
 import { MovieGallery } from './components/MovieGallery';
+import { Pagination } from './components/Pagination';
 import { Spinner } from './components/Spinner';
 
 function App() {
@@ -27,14 +28,20 @@ function App() {
     }
     fetchMovies();
   }, [language, page]);
+
+  const handlePageChange = (newPage) => {
+    setPage(newPage);
+  }
   return (
     <div className="App">
-      <h1 className="text-5xl font-bold uppercase">
-        Now Playing
+      <h1 className="text-5xl font-bold uppercase flex items-center">
+      {loadingUI && <Spinner />} Now Playing 
       </h1>
-      {loadingUI && <Spinner />}
       {!loadingUI && <MovieGallery movies={movies}/>}
-      {error && <p className="text-red-500">An error has occurred. Try again</p>}
+      {!loadingUI && <div className="w-full flex justify-center">
+        <Pagination onPageChange={handlePageChange} currentPage={page} />
+        </div>}
+      {error && <p className="text-red-500">Something went wrong</p>}
     </div>
   );
 }
