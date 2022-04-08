@@ -20,3 +20,13 @@ For front end we will be using Create React App:
 npx create-react-app client
 ```
 
+# Front end
+
+For rapid design development I will be using a css framework, Taildwind is a popular election and a good
+postcss framework.
+
+```
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+```
+
