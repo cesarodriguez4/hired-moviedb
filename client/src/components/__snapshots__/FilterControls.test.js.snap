@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders filter controls component 1`] = `
+<div>
+  <div>
+    Filter by:
+    <div>
+      Release date:
+      <span
+        class="ml-2 cursor-pointer"
+      >
+        ⬇️
+      </span>
+    </div>
+  </div>
+</div>
+`;

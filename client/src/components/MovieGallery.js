@@ -20,4 +20,4 @@ export const MovieGallery = ({movies}) => {
 
 MovieGallery.propTypes = {
     movies: PropTypes.array.isRequired
-}
+};

@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 export const Pagination = ({currentPage, onPageChange}) => {
     return <div className="flex">
         <button onClick={() => currentPage - 1 > 0 && onPageChange(currentPage - 1)}
@@ -7,4 +9,9 @@ export const Pagination = ({currentPage, onPageChange}) => {
         </div>
         <button onClick={() => onPageChange(currentPage + 1)} className="text-xl text-gray-700">Next</button>
     </div>
+};
+
+Pagination.propTypes = {
+    currentPage: PropTypes.number.isRequired,
+    onPageChange: PropTypes.func.isRequired
 };
