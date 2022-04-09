@@ -8,7 +8,7 @@ exports[`renders movie gallery 1`] = `
     Language:
     <select>
       <option
-        value="en-US"
+        value="en"
       >
         English
       </option>

@@ -9,7 +9,7 @@ Rails version: 7.0.2.3
 ```
 bundle install
 ```
-# Run
+# Run on port 3001
 ```
-rails s
+rails s -p 3001
 ```
