@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders movie gallery 1`] = `
+<div>
+  <div
+    class="my-2"
+  >
+    Language:
+    <select>
+      <option
+        value="en-US"
+      >
+        English
+      </option>
+      <option
+        value="es"
+      >
+        Spanish
+      </option>
+      <option
+        value="fr"
+      >
+        French
+      </option>
+    </select>
+  </div>
+</div>
+`;
